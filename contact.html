@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакти | TechStoreX</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">TechStoreX</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="Products.html">Продукти</a></li>
+        <li><a href="contact.html">Контакти</a></li>
+        <li><a href="#">Вход</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <h1>Свържи се с нас</h1>
+    <form class="contact-form" id="contactForm">
+      <label for="name">Име:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Имейл:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="subject">Тема:</label>
+      <select id="subject" name="subject" required>
+        <option value="">-- Избери тема --</option>
+        <option value="support">Техническа поддръжка</option>
+        <option value="order">Поръчки и доставка</option>
+        <option value="other">Друго</option>
+      </select>
+
+      <label for="message">Съобщение:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <div class="checkbox-wrapper centered">
+        <label for="agree">
+          <input type="checkbox" id="agree" required>
+          Съгласен съм с условията за ползване
+        </label>
+      </div>
+
+      <button type="submit" class="btn submit-btn">Изпрати</button>
+    </form>
+    <p id="formStatus" style="color: green; font-weight: bold; margin-top: 20px;"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TechStoreX. Всички права запазени.</p>
+    <div class="social">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const subject = document.getElementById("subject").value;
+      const message = document.getElementById("message").value.trim();
+      const agree = document.getElementById("agree").checked;
+
+      if (!name || !email || !phone || !subject || !message) {
+        alert("Моля, попълнете всички задължителни полета.");
+        return;
+      }
+
+      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      if (!emailRegex.test(email)) {
+        alert("Моля, въведете валиден имейл адрес.");
+        return;
+      }
+
+      const phoneRegex = /^(\+359|0)[87][0-9]{8}$/;
+      if (!phoneRegex.test(phone.replace(/\s+/g, ""))) {
+        alert("Моля, въведете валиден български телефонен номер.");
+        return;
+      }
+
+      if (!agree) {
+        alert("Трябва да приемете условията за ползване.");
+        return;
+      }
+
+      document.getElementById("formStatus").textContent = "Съобщението беше изпратено успешно!";
+      document.getElementById("contactForm").reset();
+    });
+  </script>
+</body>
+</html>

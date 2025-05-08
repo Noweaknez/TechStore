@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Категория | TechStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">TechStoreX</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="products.html">Продукти</a></li>
+        <li><a href="contact.html">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="product-table">
+    <h1 id="categoryTitle">Продукти</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Снимка</th>
+          <th>Име</th>
+          <th>Цена</th>
+          <th>Действие</th>
+        </tr>
+      </thead>
+      <tbody id="productTable">
+        <!-- Продуктите ще се заредят тук чрез JavaScript -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TechStore. Всички права запазени.</p>
+  </footer>
+
+  <!-- <script>
+    const params = new URLSearchParams(window.location.search);
+    const category = params.get('cat');
+    document.getElementById('categoryTitle').textContent = category;
+
+    const products = [
+      {
+        name: "Геймърски компютър Xtreme",
+        price: "2500 лв.",
+        category: "Геймърски компютри",
+        image: "images/product1.jpg"
+      },
+      {
+        name: "Лаптоп ProBook 15",
+        price: "1800 лв.",
+        category: "Лаптопи",
+        image: "images/product2.jpg"
+      },
+      {
+        name: "NVIDIA RTX 3060 Ti",
+        price: "1200 лв.",
+        category: "Видео карти",
+        image: "images/product3.jpg"
+      }
+      // Добавяй още тук
+    ];
+
+    const tableBody = document.getElementById("productTable");
+    const filtered = products.filter(p => p.category === category);
+
+    filtered.forEach(product => {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td><img src="${product.image}" width="100"></td>
+        <td>${product.name}</td>
+        <td>${product.price}</td>
+        <td><a href="#" class="btn">Купи</a></td>
+      `;
+      tableBody.appendChild(row);
+    });
+  </script> -->
+</body>
+</html>
