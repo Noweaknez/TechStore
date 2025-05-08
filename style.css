@@ -373,3 +373,23 @@ footer {
   font-weight: bold;
   font-size: 16px;
 }
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  font-size: 24px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* скрит по подразбиране */
+  transition: background-color 0.3s;
+}
+
+#backToTop:hover {
+  background-color: #555;
+}
