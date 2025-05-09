@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Контакти | TechStoreX</title>
@@ -100,19 +101,5 @@
       document.getElementById("contactForm").reset();
     });
   </script>
-  <button id="backToTop" title="Към началото">&#8679;</button>
-<script>
-  const backToTopButton = document.getElementById("backToTop");
-  window.onscroll = function () {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      backToTopButton.style.display = "block";
-    } else {
-      backToTopButton.style.display = "none";
-    }
-  };
-  backToTopButton.onclick = function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-</script>
 </body>
 </html>

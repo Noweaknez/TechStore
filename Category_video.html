@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Видео карти | TechStoreX</title>
   <link rel="stylesheet" href="style.css">
@@ -23,13 +24,13 @@
     <section class="category-list">
         <div class="product-list">
           <a href="Category_pc.html" class="product">Геймърски компютри</a>
-      <a href="Category_laptop.html" class="product">Лаптопи</a>
-      <a href="Category_video.html" class="product">Видео карти</a>
-      <a href="Category_monitor.html" class="product">Монитори</a>
-      <a href="Category_cpu.html" class="product">Процесори</a>
-      <a href="Category_motherboard.html" class="product">Дънни платки</a>
-      <a href="Category_pheripheral.html" class="product">Периферия</a>
-      <a href="Category_promo.html" class="product">Промоции</a>
+          <a href="Category_laptop.html" class="product">Лаптопи</a>
+          <a href="Category_video.html" class="product">Видео карти</a>
+          <a href="Category_monitor.html" class="product">Монитори</a>
+          <a href="Category_cpu.html" class="product">Процесори</a>
+          <a href="Category_motherboard.html" class="product">Дънни платки</a>
+          <a href="Category_pheripheral.html" class="product">Периферия</a>
+          <a href="category_promo.html" class="product">Промоции</a>
     
       </section>
 
@@ -121,19 +122,5 @@
   <footer>
     <p>&copy; 2025 TechStore. Всички права запазени.</p>
   </footer>
-  <button id="backToTop" title="Към началото">&#8679;</button>
-<script>
-  const backToTopButton = document.getElementById("backToTop");
-  window.onscroll = function () {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      backToTopButton.style.display = "block";
-    } else {
-      backToTopButton.style.display = "none";
-    }
-  };
-  backToTopButton.onclick = function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-</script>
 </body>
 </html>
