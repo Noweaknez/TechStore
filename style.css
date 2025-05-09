@@ -12,6 +12,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 20px 10%;
 }
 
@@ -30,6 +31,7 @@ header {
 nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   margin: 0;
   padding: 0;
@@ -174,6 +176,7 @@ nav ul li a {
 
 .product-table {
   width: 100%;
+  overflow-x: auto;
 }
 
 table {
@@ -323,14 +326,11 @@ footer {
 
 /* Малки екрани: телефони */
 @media (max-width: 768px) {
-  header, nav ul {
+  header,
+  nav ul {
     flex-direction: column;
     align-items: center;
-  }
-
-  nav ul {
-    padding: 0;
-    margin: 0;
+    text-align: center;
   }
 
   nav ul li {
@@ -341,26 +341,31 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
   }
 
   .category-list .product {
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
+    width: 90%;
   }
 
-  .product-table table {
-    width: 100%;
+  .product-card {
+    width: 90%;
+  }
+
+  table {
     font-size: 14px;
   }
 
-  .product-table img {
+  table img {
     width: 80px;
   }
 
-  footer {
-    font-size: 14px;
-    text-align: center;
+  .banner-text h1 {
+    font-size: 32px;
+  }
+
+  .banner-text p {
+    font-size: 18px;
   }
 
   #backToTop {
