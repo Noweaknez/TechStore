@@ -1,0 +1,1277 @@
+[
+    {
+      "id": "cpu1",
+      "name": "Intel Core i5-12400F",
+      "category": "Процесори",
+      "image": "images/cpu1.jpg",
+      "oldPrice": 320,
+      "newPrice": 265,
+      "isPromo": true,
+      "description": {
+        "overview": "Intel Core i5-12400F е 6-ядрен процесор от поколението Alder Lake, който предлага отличен баланс между цена и производителност. Подходящ е както за ежедневна употреба, така и за гейминг и продуктивност. Работи с новата LGA1700 платформа и поддържа DDR4/DDR5 памет. Перфектен избор за компютри от среден клас.",
+        "производител": "Intel",
+        "архитектура": "Alder Lake",
+        "съвместимост": "Socket LGA1700",
+        "ядра/нишки": "6 / 12",
+        "честота": "2.5GHz → 4.4GHz",
+        "TDP": "65W"
+      }
+    },
+    {
+      "id": "cpu2",
+      "name": "AMD Ryzen 5 5600X",
+      "category": "Процесори",
+      "image": "images/cpu2.jpg",
+      "oldPrice": 350,
+      "newPrice": 350,
+      "isPromo": false,
+      "description": {
+        "overview": "AMD Ryzen 5 5600X е чудесен избор за геймъри и ентусиасти. С базова честота от 3.7GHz и Boost до 4.6GHz, предлага отлична ефективност на ядро. Благодарение на Zen 3 архитектурата и AM4 сокет съвместимостта, този процесор лесно се вписва в съвременни конфигурации с B550/X570 дънни платки.",
+        "производител": "AMD",
+        "архитектура": "Zen 3",
+        "съвместимост": "Socket AM4",
+        "ядра/нишки": "6 / 12",
+        "честота": "3.7GHz → 4.6GHz",
+        "TDP": "65W"
+      }
+    },
+    {
+      "id": "cpu3",
+      "name": "Intel Core i7-12700K",
+      "category": "Процесори",
+      "image": "images/cpu3.jpg",
+      "oldPrice": 670,
+      "newPrice": 670,
+      "isPromo": false,
+      "description": {
+        "overview": "Core i7-12700K разполага с 12 ядра и 20 нишки, разделени между P-ядра и E-ядра. Отличен избор за създатели на съдържание и стриймъри. Работи с DDR5 и предлага мощна производителност за игри и мултитаскинг. Идеален за high-end конфигурации.",
+        "производител": "Intel",
+        "архитектура": "Alder Lake",
+        "съвместимост": "Socket LGA1700",
+        "ядра/нишки": "12 / 20",
+        "честота": "3.6GHz → 5.0GHz",
+        "TDP": "125W"
+      }
+    },
+    {
+      "id": "cpu4",
+      "name": "AMD Ryzen 7 5800X",
+      "category": "Процесори",
+      "image": "images/cpu4.jpg",
+      "oldPrice": 490,
+      "newPrice": 490,
+      "isPromo": false,
+      "description": {
+        "overview": "Ryzen 7 5800X разполага с 8 ядра и 16 нишки, базирани на Zen 3 архитектура. Идеален за тежки задачи, включително гейминг, програмиране и рендиране. Поддържа PCIe 4.0 и е съвместим с AM4 дъна. Отлична стойност за парите си.",
+        "производител": "AMD",
+        "архитектура": "Zen 3",
+        "съвместимост": "Socket AM4",
+        "ядра/нишки": "8 / 16",
+        "честота": "3.8GHz → 4.7GHz",
+        "TDP": "105W"
+      }
+    },
+    {
+      "id": "cpu5",
+      "name": "Intel Core i3-12100",
+      "category": "Процесори",
+      "image": "images/cpu5.jpg",
+      "oldPrice": 210,
+      "newPrice": 210,
+      "isPromo": false,
+      "description": {
+        "overview": "Core i3-12100 е бюджетен 4-ядрен процесор, който изненадва с отлична производителност за цената си. Поддържа PCIe 5.0 и DDR5/DDR4 памет. Подходящ е за офис и домашна употреба, както и за базов гейминг.",
+        "производител": "Intel",
+        "архитектура": "Alder Lake",
+        "съвместимост": "Socket LGA1700",
+        "ядра/нишки": "4 / 8",
+        "честота": "3.3GHz → 4.3GHz",
+        "TDP": "60W"
+      }
+    },
+    {
+      "id": "cpu6",
+      "name": "AMD Ryzen 9 5900X",
+      "category": "Процесори",
+      "image": "images/cpu6.jpg",
+      "oldPrice": 750,
+      "newPrice": 750,
+      "isPromo": false,
+      "description": {
+        "overview": "Ryzen 9 5900X разполага с 12 ядра и 24 нишки и е насочен към най-взискателните потребители. Подходящ за 3D рендиране, видео обработка и AAA игри. Съчетава невероятна производителност с енергийна ефективност.",
+        "производител": "AMD",
+        "архитектура": "Zen 3",
+        "съвместимост": "Socket AM4",
+        "ядра/нишки": "12 / 24",
+        "честота": "3.7GHz → 4.8GHz",
+        "TDP": "105W"
+      }
+    },
+    {
+      "id": "cpu7",
+      "name": "Intel Core i9-13900K",
+      "category": "Процесори",
+      "image": "images/cpu7.jpg",
+      "oldPrice": 1150,
+      "newPrice": 1150,
+      "isPromo": false,
+      "description": {
+        "overview": "Core i9-13900K е процесор от най-висок клас с 24 ядра и 32 нишки. Изключително мощен и създаден за най-тежки задачи, включително 4K видео обработка, гейминг и виртуализация. Поддържа овърклок и PCIe 5.0.",
+        "производител": "Intel",
+        "архитектура": "Raptor Lake",
+        "съвместимост": "Socket LGA1700",
+        "ядра/нишки": "24 / 32",
+        "честота": "3.0GHz → 5.8GHz",
+        "TDP": "125W"
+      }
+    },
+    {
+      "id": "cpu8",
+      "name": "AMD Ryzen 3 4100",
+      "category": "Процесори",
+      "image": "images/cpu8.jpg",
+      "oldPrice": 180,
+      "newPrice": 180,
+      "isPromo": false,
+      "description": {
+        "overview": "Ryzen 3 4100 е 4-ядрен процесор, идеален за бюджетни компютри. Предоставя стабилна производителност при офис приложения, уеб браузване и основни игри. Перфектен за домашна и учебна среда.",
+        "производител": "AMD",
+        "архитектура": "Zen 2",
+        "съвместимост": "Socket AM4",
+        "ядра/нишки": "4 / 8",
+        "честота": "3.8GHz → 4.0GHz",
+        "TDP": "65W"
+      }
+    },
+    {
+      "id": "cpu9",
+      "name": "Intel Pentium Gold G7400",
+      "category": "Процесори",
+      "image": "images/cpu9.jpg",
+      "oldPrice": 130,
+      "newPrice": 130,
+      "isPromo": false,
+      "description": {
+        "overview": "Pentium Gold G7400 е базов процесор с 2 ядра и 4 нишки, подходящ за сърфиране в интернет и офис приложения. Работи с DDR5 и PCIe 5.0 и е част от Alder Lake поколението. Отличен за евтини системи.",
+        "производител": "Intel",
+        "архитектура": "Alder Lake",
+        "съвместимост": "Socket LGA1700",
+        "ядра/нишки": "2 / 4",
+        "честота": "3.7GHz",
+        "TDP": "46W"
+      }
+    },
+    {
+      "id": "cpu10",
+      "name": "AMD Ryzen Threadripper 3960X",
+      "category": "Процесори",
+      "image": "images/cpu10.jpg",
+      "oldPrice": 2800,
+      "newPrice": 2800,
+      "isPromo": false,
+      "description": {
+        "overview": "Threadripper 3960X е 24-ядрен процесор от най-висок клас, създаден за професионални нужди като CAD, 3D рендиране и научни изчисления. Разполага с огромен кеш и PCIe 4.0 поддръжка. Съвместим със Socket sTRX4.",
+        "производител": "AMD",
+        "архитектура": "Zen 2",
+        "съвместимост": "Socket sTRX4",
+        "ядра/нишки": "24 / 48",
+        "честота": "3.8GHz → 4.5GHz",
+        "TDP": "280W"
+      }
+    },
+  
+    {
+      "id": "laptop1",
+      "name": "HP ProBook 450",
+      "category": "Лаптопи",
+      "image": "images/laptop1.jpg",
+      "oldPrice": 1600,
+      "newPrice": 1600,
+      "isPromo": false,
+      "description": {
+        "overview": "HP ProBook 450 е бизнес лаптоп с надежден дизайн и добър живот на батерията. Подходящ за офис, обучение и пътуване. Съчетава удобна клавиатура, модерен хардуер и стабилност в ежедневната работа.",
+        "производител": "HP",
+        "процесор": "Intel Core i5",
+        "екран": "15.6\" FHD",
+        "RAM": "16GB DDR4",
+        "SSD": "512GB",
+        "графика": "Intel UHD Graphics",
+        "батерия": "до 10 часа"
+      }
+    },
+    {
+      "id": "laptop2",
+      "name": "Lenovo ThinkPad E15",
+      "category": "Лаптопи",
+      "image": "images/laptop2.jpg",
+      "oldPrice": 1800,
+      "newPrice": 1800,
+      "isPromo": false,
+      "description": {
+        "overview": "Lenovo ThinkPad E15 е здрав и издръжлив лаптоп, популярен сред професионалисти и студенти. Предлага отлична клавиатура и възможности за сигурност. Издържал множество MIL-STD-810H тестове.",
+        "производител": "Lenovo",
+        "процесор": "Intel Core i7",
+        "екран": "15.6\" IPS Full HD",
+        "RAM": "16GB",
+        "SSD": "1TB",
+        "графика": "Intel Iris Xe",
+        "батерия": "до 9 часа"
+      }
+    },
+    {
+      "id": "laptop3",
+      "name": "ASUS VivoBook",
+      "category": "Лаптопи",
+      "image": "images/laptop3.jpg",
+      "oldPrice": 1400,
+      "newPrice": 1400,
+      "isPromo": false,
+      "description": {
+        "overview": "ASUS VivoBook е тънък и стилен лаптоп с отличен дисплей и добра производителност за ежедневна употреба. Перфектен за студенти и домашна работа. Предлага добра стойност за цената си.",
+        "производител": "ASUS",
+        "процесор": "AMD Ryzen 5",
+        "екран": "15.6\" Full HD",
+        "RAM": "8GB",
+        "SSD": "512GB",
+        "графика": "AMD Radeon Vega",
+        "батерия": "до 7 часа"
+      }
+    },
+    {
+      "id": "laptop4",
+      "name": "Dell Inspiron 15",
+      "category": "Лаптопи",
+      "image": "images/laptop4.jpg",
+      "oldPrice": 1500,
+      "newPrice": 1500,
+      "isPromo": false,
+      "description": {
+        "overview": "Dell Inspiron 15 комбинира модерен дизайн с добра производителност. Подходящ за работа, забавление и дистанционно обучение. Отличен избор за тези, които търсят надеждност и комфорт.",
+        "производител": "Dell",
+        "процесор": "Intel Core i5 11th Gen",
+        "екран": "15.6\" Full HD",
+        "RAM": "8GB",
+        "SSD": "512GB",
+        "графика": "Intel Iris Xe",
+        "батерия": "до 8 часа"
+      }
+    },
+    {
+      "id": "laptop5",
+      "name": "Acer Aspire 5",
+      "category": "Лаптопи",
+      "image": "images/laptop5.jpg",
+      "oldPrice": 1300,
+      "newPrice": 1300,
+      "isPromo": false,
+      "description": {
+        "overview": "Acer Aspire 5 е практичен лаптоп, идеален за домашна употреба и студенти. Предлага Full HD екран, надежден хардуер и компактни размери за мобилност.",
+        "производител": "Acer",
+        "процесор": "AMD Ryzen 3",
+        "екран": "15.6\" Full HD",
+        "RAM": "8GB",
+        "SSD": "256GB",
+        "графика": "AMD Radeon Vega",
+        "батерия": "до 7 часа"
+      }
+    },
+    {
+      "id": "laptop6",
+      "name": "Apple MacBook Air M1",
+      "category": "Лаптопи",
+      "image": "images/laptop6.jpg",
+      "oldPrice": 2300,
+      "newPrice": 2300,
+      "isPromo": false,
+      "description": {
+        "overview": "Apple MacBook Air с чип M1 предлага изключителна производителност и невероятна енергийна ефективност. Тих, лек и компактен – идеален за креативна работа и мобилен живот.",
+        "производител": "Apple",
+        "процесор": "Apple M1",
+        "екран": "13.3\" Retina",
+        "RAM": "8GB",
+        "SSD": "256GB",
+        "графика": "Apple GPU",
+        "батерия": "до 18 часа"
+      }
+    },
+    {
+      "id": "laptop7",
+      "name": "Microsoft Surface Laptop Go",
+      "category": "Лаптопи",
+      "image": "images/laptop7.jpg",
+      "oldPrice": 1900,
+      "newPrice": 1900,
+      "isPromo": false,
+      "description": {
+        "overview": "Surface Laptop Go е тънък и лек лаптоп, идеален за мобилна работа. Отличава се с прецизна клавиатура, сензорен екран и красив дизайн. Предназначен за студенти и леки офис задачи.",
+        "производител": "Microsoft",
+        "процесор": "Intel Core i5 10th Gen",
+        "екран": "12.4\" Touchscreen",
+        "RAM": "8GB",
+        "SSD": "128GB",
+        "графика": "Intel UHD Graphics",
+        "батерия": "до 13 часа"
+      }
+    },
+    {
+      "id": "laptop8",
+      "name": "HP Envy x360",
+      "category": "Лаптопи",
+      "image": "images/laptop8.jpg",
+      "oldPrice": 2100,
+      "newPrice": 2100,
+      "isPromo": false,
+      "description": {
+        "overview": "HP Envy x360 е 2-в-1 лаптоп с тъч екран, подходящ за креативни дейности и мултимедия. Комбинира стил, гъвкавост и висока производителност в елегантен корпус.",
+        "производител": "HP",
+        "процесор": "AMD Ryzen 7",
+        "екран": "15.6\" Full HD Touch",
+        "RAM": "16GB",
+        "SSD": "512GB",
+        "графика": "AMD Radeon",
+        "батерия": "до 10 часа"
+      }
+    },
+    {
+      "id": "laptop9",
+      "name": "ASUS ZenBook 14",
+      "category": "Лаптопи",
+      "image": "images/laptop9.jpg",
+      "oldPrice": 2200,
+      "newPrice": 2200,
+      "isPromo": false,
+      "description": {
+        "overview": "ASUS ZenBook 14 е премиум лаптоп с ултра тънък дизайн, отлична изработка и мощен хардуер. Подходящ за бизнес и пътуване. Включва NumberPad и дълъг живот на батерията.",
+        "производител": "ASUS",
+        "процесор": "Intel Core i7",
+        "екран": "14\" Full HD",
+        "RAM": "16GB",
+        "SSD": "1TB",
+        "графика": "Intel Iris Xe",
+        "батерия": "до 14 часа"
+      }
+    },
+    {
+      "id": "laptop10",
+      "name": "Lenovo IdeaPad 3",
+      "category": "Лаптопи",
+      "image": "images/laptop10.jpg",
+      "oldPrice": 1200,
+      "newPrice": 1200,
+      "isPromo": false,
+      "description": {
+        "overview": "Lenovo IdeaPad 3 е бюджетен лаптоп, подходящ за ежедневна употреба. Разполага с добър дисплей, комфортна клавиатура и тиха работа. Идеален за ученици и домашни потребители.",
+        "производител": "Lenovo",
+        "процесор": "Intel Core i3",
+        "екран": "15.6\" Full HD",
+        "RAM": "8GB",
+        "SSD": "256GB",
+        "графика": "Intel UHD Graphics",
+        "батерия": "до 6 часа"
+      }
+    },
+    {
+        "id": "monitor1",
+        "name": "LG UltraGear 27\"",
+        "category": "Монитори",
+        "image": "images/monitor1.jpg",
+        "oldPrice": 530,
+        "newPrice": 530,
+        "isPromo": false,
+        "description": {
+          "overview": "LG UltraGear 27\" е геймърски монитор с бързо време за реакция и висока честота на опресняване. Идеален за FPS и състезателни игри. Поддържа AMD FreeSync и разполага с Full HD резолюция.",
+          "производител": "LG",
+          "резолюция": "1920x1080",
+          "размер": "27 инча",
+          "панел": "IPS",
+          "честота на опресняване": "144Hz",
+          "време за реакция": "1ms",
+          "технологии": "AMD FreeSync, HDR"
+        }
+      },
+      {
+        "id": "monitor2",
+        "name": "ASUS TUF Gaming 24\"",
+        "category": "Монитори",
+        "image": "images/monitor2.jpg",
+        "oldPrice": 480,
+        "newPrice": 408,
+        "isPromo": true,
+        "description": {
+          "overview": "ASUS TUF Gaming 24\" предлага изключително бърза 165Hz опреснителна честота и ELMB технология за по-гладък геймплей. Прецизна картина и издръжлива изработка – перфектен за геймъри.",
+          "производител": "ASUS",
+          "резолюция": "1920x1080",
+          "размер": "23.8 инча",
+          "панел": "IPS",
+          "честота на опресняване": "165Hz",
+          "време за реакция": "1ms",
+          "технологии": "ELMB, FreeSync Premium"
+        }
+      },
+      {
+        "id": "monitor3",
+        "name": "Acer Nitro VG270",
+        "category": "Монитори",
+        "image": "images/monitor3.jpg",
+        "oldPrice": 510,
+        "newPrice": 510,
+        "isPromo": false,
+        "description": {
+          "overview": "Acer Nitro VG270 е широкоформатен монитор, предназначен за гейминг и мултимедия. Ярки цветове, 75Hz опреснителна честота и IPS панел осигуряват комфорт при дълго използване.",
+          "производител": "Acer",
+          "резолюция": "1920x1080",
+          "размер": "27 инча",
+          "панел": "IPS",
+          "честота на опресняване": "75Hz",
+          "време за реакция": "1ms VRB",
+          "технологии": "AMD FreeSync"
+        }
+      },
+      {
+        "id": "monitor4",
+        "name": "Dell UltraSharp U2723QE",
+        "category": "Монитори",
+        "image": "images/monitor4.jpg",
+        "oldPrice": 900,
+        "newPrice": 765,
+        "isPromo": true,
+        "description": {
+          "overview": "Dell UltraSharp U2723QE е професионален 4K монитор с брилянтно цветово възпроизвеждане и USB-C хъб. Перфектен за графични дизайнери и професионална употреба.",
+          "производител": "Dell",
+          "резолюция": "3840x2160 (4K)",
+          "размер": "27 инча",
+          "панел": "IPS",
+          "честота на опресняване": "60Hz",
+          "време за реакция": "5ms",
+          "технологии": "USB-C, DisplayHDR 400"
+        }
+      },
+      {
+        "id": "monitor5",
+        "name": "Samsung Odyssey G5",
+        "category": "Монитори",
+        "image": "images/monitor5.jpg",
+        "oldPrice": 760,
+        "newPrice": 760,
+        "isPromo": false,
+        "description": {
+          "overview": "Samsung Odyssey G5 е извит геймърски монитор с WQHD резолюция и 144Hz. Идеален за потапяне в игри и забавление. Поддържа FreeSync и HDR.",
+          "производител": "Samsung",
+          "резолюция": "2560x1440",
+          "размер": "32 инча",
+          "панел": "VA",
+          "честота на опресняване": "144Hz",
+          "време за реакция": "1ms",
+          "технологии": "Curved, FreeSync, HDR10"
+        }
+      },
+      {
+        "id": "monitor6",
+        "name": "Philips 246E9QDSB",
+        "category": "Монитори",
+        "image": "images/monitor6.jpg",
+        "oldPrice": 310,
+        "newPrice": 310,
+        "isPromo": false,
+        "description": {
+          "overview": "Philips 246E9QDSB предлага живи цветове и широк зрителен ъгъл благодарение на IPS технологията. Отличен избор за домашна и офис употреба на достъпна цена.",
+          "производител": "Philips",
+          "резолюция": "1920x1080",
+          "размер": "23.8 инча",
+          "панел": "IPS",
+          "честота на опресняване": "75Hz",
+          "време за реакция": "5ms",
+          "технологии": "LowBlue Mode, Flicker-Free"
+        }
+      },
+      {
+        "id": "monitor7",
+        "name": "BenQ EX2510",
+        "category": "Монитори",
+        "image": "images/monitor7.jpg",
+        "oldPrice": 420,
+        "newPrice": 420,
+        "isPromo": false,
+        "description": {
+          "overview": "BenQ EX2510 е геймърски монитор с бърза реакция и AMD FreeSync. Перфектен за динамични игри с ясни образи и добро цветово покритие.",
+          "производител": "BenQ",
+          "резолюция": "1920x1080",
+          "размер": "24.5 инча",
+          "панел": "IPS",
+          "честота на опресняване": "144Hz",
+          "време за реакция": "1ms MPRT",
+          "технологии": "HDRi, FreeSync Premium"
+        }
+      },
+      {
+        "id": "monitor8",
+        "name": "MSI Optix MAG274QRF",
+        "category": "Монитори",
+        "image": "images/monitor8.jpg",
+        "oldPrice": 650,
+        "newPrice": 650,
+        "isPromo": false,
+        "description": {
+          "overview": "MSI Optix MAG274QRF е WQHD монитор с бърза 165Hz честота и 1ms GtG време за реакция. Насочен към eSports геймъри с впечатляваща цветова точност.",
+          "производител": "MSI",
+          "резолюция": "2560x1440",
+          "размер": "27 инча",
+          "панел": "Rapid IPS",
+          "честота на опресняване": "165Hz",
+          "време за реакция": "1ms GtG",
+          "технологии": "G-SYNC Compatible, HDR"
+        }
+      },
+      {
+        "id": "monitor9",
+        "name": "Gigabyte M28U",
+        "category": "Монитори",
+        "image": "images/monitor9.jpg",
+        "oldPrice": 870,
+        "newPrice": 870,
+        "isPromo": false,
+        "description": {
+          "overview": "Gigabyte M28U е 4K геймърски монитор с HDMI 2.1 за конзоли и PC. Висока резолюция и плавно движение – подходящ за next-gen игри и продуктивност.",
+          "производител": "Gigabyte",
+          "резолюция": "3840x2160 (4K)",
+          "размер": "28 инча",
+          "панел": "IPS",
+          "честота на опресняване": "144Hz",
+          "време за реакция": "1ms",
+          "технологии": "HDMI 2.1, HDR400, FreeSync"
+        }
+      },
+      {
+        "id": "monitor10",
+        "name": "ViewSonic XG2405",
+        "category": "Монитори",
+        "image": "images/monitor10.jpg",
+        "oldPrice": 390,
+        "newPrice": 390,
+        "isPromo": false,
+        "description": {
+          "overview": "ViewSonic XG2405 предлага балансирана комбинация от цена и производителност. С подходящи параметри за игри и офис задачи, той е чудесен универсален избор.",
+          "производител": "ViewSonic",
+          "резолюция": "1920x1080",
+          "размер": "24 инча",
+          "панел": "IPS",
+          "честота на опресняване": "144Hz",
+          "време за реакция": "1ms MPRT",
+          "технологии": "AMD FreeSync, Flicker-Free"
+        }
+      },
+    
+      {
+        "id": "mb1",
+        "name": "ASUS PRIME B550M-A",
+        "category": "Дънни платки",
+        "image": "images/mb1.jpg",
+        "oldPrice": 210,
+        "newPrice": 210,
+        "isPromo": false,
+        "description": {
+          "overview": "ASUS PRIME B550M-A е надеждна и стабилна дънна платка, предназначена за AMD Ryzen процесори. Поддържа PCIe 4.0, два M.2 слота и Aura Sync осветление.",
+          "производител": "ASUS",
+          "сокет": "AM4",
+          "чипсет": "B550",
+          "форм-фактор": "mATX",
+          "RAM": "до 128GB DDR4",
+          "интерфейси": "PCIe 4.0, USB 3.2, HDMI, M.2"
+        }
+      },
+      {
+        "id": "mb2",
+        "name": "MSI MAG B660M",
+        "category": "Дънни платки",
+        "image": "images/mb2.jpg",
+        "oldPrice": 260,
+        "newPrice": 260,
+        "isPromo": false,
+        "description": {
+          "overview": "MSI MAG B660M е дънна платка за Intel Alder Lake процесори с поддръжка на PCIe 4.0 и DDR4 памет. Подходяща за бюджетни гейминг конфигурации.",
+          "производител": "MSI",
+          "сокет": "LGA1700",
+          "чипсет": "B660",
+          "форм-фактор": "mATX",
+          "RAM": "до 128GB DDR4",
+          "интерфейси": "PCIe 4.0, USB-C, DisplayPort, M.2"
+        }
+      },
+      {
+        "id": "mb3",
+        "name": "Gigabyte B550 AORUS Elite",
+        "category": "Дънни платки",
+        "image": "images/mb3.jpg",
+        "oldPrice": 280,
+        "newPrice": 280,
+        "isPromo": false,
+        "description": {
+          "overview": "Gigabyte B550 AORUS Elite е геймърска дънна платка с подсилени VRM и охлаждане. Идеален избор за Ryzen 5000 серии и високопроизводителни конфигурации.",
+          "производител": "Gigabyte",
+          "сокет": "AM4",
+          "чипсет": "B550",
+          "форм-фактор": "ATX",
+          "RAM": "до 128GB DDR4",
+          "интерфейси": "PCIe 4.0, 2x M.2, RGB, HDMI"
+        }
+      },
+      {
+        "id": "mb4",
+        "name": "ASRock B450M Pro4",
+        "category": "Дънни платки",
+        "image": "images/mb4.jpg",
+        "oldPrice": 150,
+        "newPrice": 150,
+        "isPromo": false,
+        "description": {
+          "overview": "ASRock B450M Pro4 е компактна и достъпна дънна платка за AM4 процесори. Поддържа CrossFireX и два M.2 слота за бързо съхранение.",
+          "производител": "ASRock",
+          "сокет": "AM4",
+          "чипсет": "B450",
+          "форм-фактор": "mATX",
+          "RAM": "до 64GB DDR4",
+          "интерфейси": "USB 3.1, HDMI, VGA, M.2"
+        }
+      },
+      {
+        "id": "mb5",
+        "name": "ASUS TUF Gaming X570-Plus",
+        "category": "Дънни платки",
+        "image": "images/mb5.jpg",
+        "oldPrice": 370,
+        "newPrice": 370,
+        "isPromo": false,
+        "description": {
+          "overview": "ASUS TUF Gaming X570-Plus предлага издръжливост, RGB ефекти и стабилност за геймъри. Осигурява поддръжка на PCIe 4.0, Wi-Fi и отлични температури.",
+          "производител": "ASUS",
+          "сокет": "AM4",
+          "чипсет": "X570",
+          "форм-фактор": "ATX",
+          "RAM": "до 128GB DDR4",
+          "интерфейси": "PCIe 4.0, Wi-Fi, RGB, HDMI"
+        }
+      },
+      {
+        "id": "mb6",
+        "name": "MSI Z690-A DDR4",
+        "category": "Дънни платки",
+        "image": "images/mb6.jpg",
+        "oldPrice": 420,
+        "newPrice": 420,
+        "isPromo": false,
+        "description": {
+          "overview": "MSI Z690-A DDR4 е мощна ATX платка за 12-то поколение Intel процесори. Поддържа DDR4 RAM и PCIe 5.0, като предлага отлична стабилност за ентусиасти.",
+          "производител": "MSI",
+          "сокет": "LGA1700",
+          "чипсет": "Z690",
+          "форм-фактор": "ATX",
+          "RAM": "до 128GB DDR4",
+          "интерфейси": "PCIe 5.0, USB 3.2, 2x M.2, HDMI"
+        }
+      },
+      {
+        "id": "mb7",
+        "name": "Gigabyte Z790 AORUS Elite",
+        "category": "Дънни платки",
+        "image": "images/mb7.jpg",
+        "oldPrice": 540,
+        "newPrice": 540,
+        "isPromo": false,
+        "description": {
+          "overview": "Gigabyte Z790 AORUS Elite е дънна платка за хай-енд конфигурации с Intel 13-то поколение. Подходяща за овърклок и напреднали потребители с нужда от бързина.",
+          "производител": "Gigabyte",
+          "сокет": "LGA1700",
+          "чипсет": "Z790",
+          "форм-фактор": "ATX",
+          "RAM": "до 128GB DDR5",
+          "интерфейси": "PCIe 5.0, Wi-Fi, RGB, 4x M.2"
+        }
+      },
+      {
+        "id": "mb8",
+        "name": "ASRock X670E Steel Legend",
+        "category": "Дънни платки",
+        "image": "images/mb8.jpg",
+        "oldPrice": 600,
+        "newPrice": 600,
+        "isPromo": false,
+        "description": {
+          "overview": "ASRock X670E Steel Legend е висок клас платка за Ryzen 7000 серии. Поддържа PCIe 5.0, DDR5 и идва с солидна охладителна система и отлична изработка.",
+          "производител": "ASRock",
+          "сокет": "AM5",
+          "чипсет": "X670E",
+          "форм-фактор": "ATX",
+          "RAM": "до 128GB DDR5",
+          "интерфейси": "PCIe 5.0, USB 4.0, Wi-Fi 6E, RGB"
+        }
+      },
+      {
+        "id": "mb9",
+        "name": "ASUS ROG Strix B550-F",
+        "category": "Дънни платки",
+        "image": "images/mb9.jpg",
+        "oldPrice": 320,
+        "newPrice": 320,
+        "isPromo": false,
+        "description": {
+          "overview": "ASUS ROG Strix B550-F Gaming е балансирана платка за геймъри с AM4 процесори. Предлага отличен дизайн, RGB осветление и стабилни захранващи фази.",
+          "производител": "ASUS",
+          "сокет": "AM4",
+          "чипсет": "B550",
+          "форм-фактор": "ATX",
+          "RAM": "до 128GB DDR4",
+          "интерфейси": "PCIe 4.0, 2x M.2, RGB, HDMI"
+        }
+      },
+      {
+        "id": "mb10",
+        "name": "Biostar B760MX2",
+        "category": "Дънни платки",
+        "image": "images/mb10.jpg",
+        "oldPrice": 180,
+        "newPrice": 180,
+        "isPromo": false,
+        "description": {
+          "overview": "Biostar B760MX2 е бюджетна, но функционална платка за Intel 12/13-то поколение. Отличен избор за компактен офис или домашен компютър с DDR5 поддръжка.",
+          "производител": "Biostar",
+          "сокет": "LGA1700",
+          "чипсет": "B760",
+          "форм-фактор": "mATX",
+          "RAM": "до 64GB DDR5",
+          "интерфейси": "HDMI, USB 3.2, PCIe 4.0, M.2"
+        }
+      },
+      {
+        "id": "pc1",
+        "name": "Геймърски компютър Xtreme",
+        "category": "Геймърски компютри",
+        "image": "images/product1.jpg",
+        "oldPrice": 2500,
+        "newPrice": 2500,
+        "isPromo": false,
+        "description": {
+          "overview": "Мощна геймърска конфигурация, подходяща за 1440p и дори 4K гейминг. Осигурява висока производителност в съвременни заглавия и VR среди.",
+          "процесор": "Intel Core i5-13400F",
+          "видео карта": "NVIDIA GeForce RTX 3060 Ti 8GB",
+          "RAM": "16GB DDR4 3200MHz",
+          "дъно": "ASUS PRIME B660M-A",
+          "SSD": "1TB NVMe Gen4",
+          "захранване": "650W 80+ Bronze",
+          "кутия": "Cooler Master MB311L ARGB"
+        }
+      },
+      {
+        "id": "pc2",
+        "name": "Геймърска конфигурация Thunder",
+        "category": "Геймърски компютри",
+        "image": "images/product2.jpg",
+        "oldPrice": 2700,
+        "newPrice": 2700,
+        "isPromo": false,
+        "description": {
+          "overview": "Оптимален баланс между цена и производителност. Подходящ за Full HD и QHD гейминг, както и стрийминг.",
+          "процесор": "AMD Ryzen 5 5600X",
+          "видео карта": "AMD Radeon RX 6700 XT 12GB",
+          "RAM": "16GB DDR4 3600MHz",
+          "дъно": "MSI B550 Tomahawk",
+          "SSD": "1TB NVMe",
+          "захранване": "600W 80+ Bronze",
+          "кутия": "NZXT H510"
+        }
+      },
+      {
+        "id": "pc3",
+        "name": "Alienware Aurora",
+        "category": "Геймърски компютри",
+        "image": "images/product3.jpg",
+        "oldPrice": 4900,
+        "newPrice": 4900,
+        "isPromo": false,
+        "description": {
+          "overview": "Премиум конфигурация с фокус върху върхова производителност, охлаждане и дизайн. Идеален за 4K игри и тежки приложения.",
+          "процесор": "Intel Core i9-13900KF",
+          "видео карта": "NVIDIA GeForce RTX 4080 16GB",
+          "RAM": "32GB DDR5 5200MHz",
+          "дъно": "Z790 ATX",
+          "SSD": "2TB NVMe + 2TB HDD",
+          "захранване": "850W 80+ Gold",
+          "кутия": "Alienware Custom Case"
+        }
+      },
+      {
+        "id": "pc4",
+        "name": "MSI Nightblade",
+        "category": "Геймърски компютри",
+        "image": "images/product4.jpg",
+        "oldPrice": 3100,
+        "newPrice": 3100,
+        "isPromo": false,
+        "description": {
+          "overview": "Компактна и ефективна геймърска машина от MSI. Подходяща за eSports и AAA игри при високи настройки.",
+          "процесор": "Intel Core i7-12700F",
+          "видео карта": "NVIDIA RTX 3070 8GB",
+          "RAM": "16GB DDR4",
+          "дъно": "MSI B660M Mortar",
+          "SSD": "1TB NVMe",
+          "захранване": "700W",
+          "кутия": "MSI Nightblade Custom"
+        }
+      },
+      {
+        "id": "pc5",
+        "name": "CyberPowerPC Gamer",
+        "category": "Геймърски компютри",
+        "image": "images/product5.jpg",
+        "oldPrice": 2600,
+          "newPrice": 2600,
+        "isPromo": false,
+        "description": {
+          "overview": "Солидна гейминг платформа с акцент върху достъпната цена и добри компоненти. Отлична за Full HD гейминг и стрийминг.",
+          "процесор": "AMD Ryzen 7 5800X",
+          "видео карта": "NVIDIA GeForce RTX 3060 12GB",
+          "RAM": "16GB DDR4 3200MHz",
+          "дъно": "ASRock B550M",
+          "SSD": "1TB SSD",
+          "захранване": "650W Bronze",
+          "кутия": "Thermaltake V200"
+        }
+      },
+      {
+        "id": "pc6",
+        "name": "Lenovo Legion T5",
+        "category": "Геймърски компютри",
+        "image": "images/product6.jpg",
+        "oldPrice": 3300,
+        "newPrice": 3300,
+        "isPromo": false,
+        "description": {
+          "overview": "Lenovo Legion T5 е стилна и мощна геймърска машина с оптимизирано въздушно охлаждане и балансирана производителност за всяка задача.",
+          "процесор": "Intel Core i7-12700",
+          "видео карта": "NVIDIA RTX 3070 Ti 8GB",
+          "RAM": "32GB DDR5",
+          "дъно": "Intel B660",
+          "SSD": "1TB NVMe",
+          "захранване": "700W 80+ Bronze",
+          "кутия": "Legion Custom"
+        }
+      },
+      {
+        "id": "pc7",
+        "name": "ASUS ROG Strix GA15",
+        "category": "Геймърски компютри",
+        "image": "images/product7.jpg",
+        "oldPrice": 3500,
+        "newPrice": 3500,
+        "isPromo": false,
+        "description": {
+          "overview": "ASUS ROG Strix GA15 съчетава агресивен дизайн с висока производителност. Отличен за сериозни геймъри и креативни професионалисти.",
+          "процесор": "AMD Ryzen 9 5900X",
+          "видео карта": "NVIDIA GeForce RTX 3080 10GB",
+          "RAM": "32GB DDR4 3600MHz",
+          "дъно": "ASUS B550-F",
+          "SSD": "2TB NVMe",
+          "захранване": "850W Gold",
+          "кутия": "ROG Design Tower"
+        }
+      },
+      {
+        "id": "pc8",
+        "name": "HP OMEN 30L",
+        "category": "Геймърски компютри",
+        "image": "images/product8.jpg",
+        "oldPrice": 3700,
+        "newPrice": 3700,
+        "isPromo": false,
+        "description": {
+          "overview": "HP OMEN 30L е елегантен и мощен десктоп, ориентиран към геймъри и творци. Перфектен за 4K игри и видеообработка.",
+          "процесор": "Intel Core i7-13700KF",
+          "видео карта": "NVIDIA RTX 4070 12GB",
+          "RAM": "32GB DDR5",
+          "дъно": "Z790 OEM",
+          "SSD": "2TB NVMe",
+          "захранване": "750W Gold",
+          "кутия": "OMEN Glass RGB"
+        }
+      },
+      {
+        "id": "pc9",
+        "name": "Acer Predator Orion",
+        "category": "Геймърски компютри",
+        "image": "images/product9.jpg",
+        "oldPrice": 4100,
+        "newPrice": 4100,
+        "isPromo": false,
+        "description": {
+          "overview": "Acer Predator Orion е премиум геймърска конфигурация с агресивен дизайн, охлаждане с течност и невероятна графична мощ.",
+          "процесор": "Intel Core i9-12900KF",
+          "видео карта": "NVIDIA GeForce RTX 4080 16GB",
+          "RAM": "32GB DDR5",
+          "дъно": "Z690 Custom",
+          "SSD": "2TB SSD + 2TB HDD",
+          "захранване": "1000W Platinum",
+          "кутия": "Predator Orion RGB"
+        }
+      },
+      {
+        "id": "pc10",
+        "name": "Dell G5 Gaming",
+        "category": "Геймърски компютри",
+        "image": "images/product10.jpg",
+        "oldPrice": 2800,
+        "newPrice": 2800,
+        "isPromo": false,
+        "description": {
+          "overview": "Dell G5 Gaming комбинира мощ и надеждност в компактен корпус. Подходящ за гейминг, работа и стрийминг.",
+          "процесор": "Intel Core i5-12600KF",
+          "видео карта": "NVIDIA RTX 3060 Ti",
+          "RAM": "16GB DDR4",
+          "дъно": "B660 OEM",
+          "SSD": "1TB NVMe",
+          "захранване": "600W",
+          "кутия": "Dell G5"
+        }
+      },
+    
+      {
+        "id": "peripheral1",
+        "name": "Геймърска мишка Logitech G502 HERO",
+        "category": "Периферия",
+        "image": "images/peripheral1.jpg",
+        "oldPrice": 115,
+        "newPrice": 115,
+        "isPromo": false,
+        "description": {
+          "overview": "Logitech G502 HERO е геймърска мишка с прецизен HERO сензор и до 25,600 DPI. Има програмируеми бутони и регулируеми тежести за перфектен баланс.",
+          "тип": "Геймърска мишка",
+          "dpi": "100 - 25,600",
+          "бутоните": "11 програмируеми",
+          "интерфейс": "USB",
+          "осветление": "RGB LIGHTSYNC"
+        }
+      },
+      {
+        "id": "peripheral2",
+        "name": "Механична клавиатура Redragon K552",
+        "category": "Периферия",
+        "image": "images/peripheral2.jpg",
+        "oldPrice": 98,
+        "newPrice": 98,
+        "isPromo": false,
+        "description": {
+          "overview": "Redragon K552 е компактна механична клавиатура с червени превключватели, идеална за гейминг и писане. Издръжлива конструкция и RGB подсветка.",
+          "тип": "Механична клавиатура",
+          "суичове": "Red Switch",
+          "подсветка": "RGB",
+          "свързаност": "USB",
+          "форм-фактор": "TKL (без numpad)"
+        }
+      },
+      {
+        "id": "peripheral3",
+        "name": "Геймърски слушалки Razer Kraken X",
+        "category": "Периферия",
+        "image": "images/peripheral3.jpg",
+        "oldPrice": 145,
+        "newPrice": 145,
+        "isPromo": false,
+        "description": {
+          "overview": "Razer Kraken X предлагат комфорт и 7.1 съраунд звук за завладяващо гейминг изживяване. Лек дизайн и гъвкав микрофон.",
+          "тип": "Геймърски слушалки",
+          "свързаност": "3.5mm жак",
+          "съвместимост": "PC, PS4, Xbox, мобилни устройства",
+          "звук": "7.1 съраунд",
+          "тегло": "250 г"
+        }
+      },
+      {
+        "id": "peripheral4",
+        "name": "Уеб камера Logitech C920",
+        "category": "Периферия",
+        "image": "images/peripheral4.jpg",
+        "oldPrice": 185,
+        "newPrice": 185,
+        "isPromo": false,
+        "description": {
+          "overview": "Logitech C920 е популярна уеб камера с 1080p резолюция и автоматичен фокус. Идеална за видеоконференции и стрийминг.",
+          "тип": "Уеб камера",
+          "резолюция": "Full HD 1080p",
+          "микрофон": "Стерео",
+          "свързаност": "USB",
+          "монтаж": "Щипка за монитор/статив"
+        }
+      },
+      {
+        "id": "peripheral5",
+        "name": "Мишка за работа Logitech M705",
+        "category": "Периферия",
+        "image": "images/peripheral5.jpg",
+        "oldPrice": 78,
+        "newPrice": 78,
+        "isPromo": false,
+        "description": {
+          "overview": "Logitech M705 е безжична мишка с ергономичен дизайн и дълъг живот на батерията. Перфектна за офис работа и продуктивност.",
+          "тип": "Офис мишка",
+          "свързаност": "Wireless (Unifying)",
+          "бутоните": "7",
+          "батерия": "До 3 години",
+          "допълнителни функции": "Hyper-Fast Scroll"
+        }
+      },
+      {
+        "id": "peripheral6",
+        "name": "Мултимедиен високоговорител Creative Pebble",
+        "category": "Периферия",
+        "image": "images/peripheral6.jpg",
+        "oldPrice": 59,
+        "newPrice": 59,
+        "isPromo": false,
+        "description": {
+          "overview": "Creative Pebble са компактни USB високоговорители с чист звук и модерен дизайн. Перфектни за бюрото у дома или в офиса.",
+          "тип": "Стерео говорители",
+          "захранване": "USB",
+          "вход": "3.5mm",
+          "мощност": "4.4W RMS",
+          "размери": "122 x 116 x 115 mm"
+        }
+      },
+      {
+        "id": "peripheral7",
+        "name": "Клавиатура Logitech K380 (Bluetooth)",
+        "category": "Периферия",
+        "image": "images/peripheral7.jpg",
+        "oldPrice": 95,
+        "newPrice": 95,
+        "isPromo": false,
+        "description": {
+          "overview": "Logitech K380 е компактна безжична клавиатура с Bluetooth свързаност, поддържаща до 3 устройства едновременно.",
+          "тип": "Безжична клавиатура",
+          "свързаност": "Bluetooth",
+          "батерия": "2x AAA (до 2 години)",
+          "тегло": "423 г",
+          "съвместимост": "Windows, macOS, Android, iOS"
+        }
+      },
+      {
+        "id": "peripheral8",
+        "name": "Геймърска подложка SteelSeries QcK",
+        "category": "Периферия",
+        "image": "images/peripheral8.jpg",
+        "oldPrice": 32,
+        "newPrice": 32,
+        "isPromo": false,
+        "description": {
+          "overview": "SteelSeries QcK е една от най-популярните геймърски подложки с гладка повърхност за прецизен контрол и гумирано дъно против плъзгане.",
+          "тип": "Подложка за мишка",
+          "материал": "Текстил и гума",
+          "размер": "320 x 270 mm",
+          "дебелина": "2 mm",
+          "подходяща за": "Оптични и лазерни мишки"
+        }
+      },
+      {
+        "id": "peripheral9",
+        "name": "USB хъб ORICO 4 порта",
+        "category": "Периферия",
+        "image": "images/peripheral9.jpg",
+        "oldPrice": 28,
+        "newPrice": 28,
+        "isPromo": false,
+        "description": {
+          "overview": "Компактен USB хъб с 4 порта от ORICO, идеален за разширяване на USB възможностите на вашия лаптоп или компютър.",
+          "тип": "USB хъб",
+          "интерфейс": "USB 3.0",
+          "брой портове": "4",
+          "захранване": "През USB",
+          "съвместимост": "Windows, macOS, Linux"
+        }
+      },
+      {
+        "id": "peripheral10",
+        "name": "Микрофон Fifine K669B",
+        "category": "Периферия",
+        "image": "images/peripheral10.jpg",
+        "oldPrice": 92,
+        "newPrice": 92,
+        "isPromo": false,
+        "description": {
+          "overview": "Fifine K669B е бюджетен USB микрофон с отлична чувствителност и качество на звука, подходящ за подкасти, стрийминг и онлайн разговори.",
+          "тип": "Кондензаторен микрофон",
+          "свързаност": "USB",
+          "контроли": "Регулатор на силата на звука",
+          "съвместимост": "Windows, Mac",
+          "стойка": "Настолна метална"
+        }
+      },
+    
+      {
+        "id": "gpu1",
+        "name": "NVIDIA GeForce RTX 3060 Ti",
+        "category": "Видео карти",
+        "image": "images/gpu1.jpg",
+        "oldPrice": 1199,
+        "newPrice": 1019,
+        "isPromo": true,
+        "description": {
+          "overview": "RTX 3060 Ti предлага отлична производителност за 1080p и 1440p гейминг с поддръжка на Ray Tracing и DLSS. Отличен избор за геймъри с по-високи изисквания.",
+          "производител": "NVIDIA",
+          "памет": "8GB GDDR6",
+          "интерфейс": "PCIe 4.0",
+          "изходи": "HDMI, DisplayPort x3",
+          "технологии": "Ray Tracing, DLSS, G-SYNC"
+        }
+      },
+      {
+        "id": "gpu2",
+        "name": "AMD Radeon RX 6700 XT",
+        "category": "Видео карти",
+        "image": "images/gpu2.jpg",
+        "oldPrice": 1145,
+        "newPrice": 1145,
+        "isPromo": false,
+        "description": {
+          "overview": "RX 6700 XT осигурява висока производителност при 1440p резолюция и е идеална за геймъри, които искат AMD платформа с добра ефективност.",
+          "производител": "AMD",
+          "памет": "12GB GDDR6",
+          "интерфейс": "PCIe 4.0",
+          "изходи": "HDMI, DisplayPort",
+          "технологии": "FidelityFX, FreeSync"
+        }
+      },
+      {
+        "id": "gpu3",
+        "name": "NVIDIA GeForce RTX 3070",
+        "category": "Видео карти",
+        "image": "images/gpu3.jpg",
+        "oldPrice": 1399,
+        "newPrice": 1399,
+        "isPromo": false,
+        "description": {
+          "overview": "RTX 3070 предоставя производителност, близка до RTX 2080 Ti, но на по-достъпна цена. Страхотен избор за QHD гейминг.",
+          "производител": "NVIDIA",
+          "памет": "8GB GDDR6",
+          "интерфейс": "PCIe 4.0",
+          "изходи": "HDMI, DisplayPort x3",
+          "технологии": "Ray Tracing, DLSS"
+        }
+      },
+      {
+        "id": "gpu4",
+        "name": "NVIDIA GTX 1660 Super",
+        "category": "Видео карти",
+        "image": "images/gpu4.jpg",
+        "oldPrice": 849,
+        "newPrice": 722,
+        "isPromo": true,
+        "description": {
+          "overview": "GTX 1660 Super е чудесен избор за бюджетен гейминг в 1080p. Без Ray Tracing, но с отлична цена/производителност.",
+          "производител": "NVIDIA",
+          "памет": "6GB GDDR6",
+          "интерфейс": "PCIe 3.0",
+          "изходи": "HDMI, DisplayPort, DVI",
+          "технологии": "G-SYNC"
+        }
+      },
+      {
+        "id": "gpu5",
+        "name": "AMD Radeon RX 6600",
+        "category": "Видео карти",
+        "image": "images/gpu5.jpg",
+        "oldPrice": 949,
+        "newPrice": 949,
+        "isPromo": false,
+        "description": {
+          "overview": "RX 6600 е подходяща за Full HD гейминг с добра енергийна ефективност и ниски температури.",
+          "производител": "AMD",
+          "памет": "8GB GDDR6",
+          "интерфейс": "PCIe 4.0",
+          "изходи": "HDMI, DisplayPort",
+          "технологии": "FidelityFX, FreeSync"
+        }
+      },
+      {
+        "id": "gpu6",
+        "name": "NVIDIA RTX 3080",
+        "category": "Видео карти",
+        "image": "images/gpu6.jpg",
+        "oldPrice": 1890,
+        "newPrice": 1890,
+        "isPromo": false,
+        "description": {
+          "overview": "RTX 3080 осигурява безкомпромисна производителност за 4K гейминг и стрийминг. Една от най-добрите карти за високи натоварвания.",
+          "производител": "NVIDIA",
+          "памет": "10GB GDDR6X",
+          "интерфейс": "PCIe 4.0",
+          "изходи": "HDMI, DisplayPort x3",
+          "технологии": "Ray Tracing, DLSS, G-SYNC"
+        }
+      },
+      {
+        "id": "gpu7",
+        "name": "AMD Radeon RX 7900 XT",
+        "category": "Видео карти",
+        "image": "images/gpu7.jpg",
+        "oldPrice": 2199,
+        "newPrice": 2199,
+        "isPromo": false,
+        "description": {
+          "overview": "RX 7900 XT е флагманска видео карта с RDNA 3 архитектура, подходяща за 4K гейминг и тежки графични приложения.",
+          "производител": "AMD",
+          "памет": "20GB GDDR6",
+          "интерфейс": "PCIe 4.0",
+          "изходи": "HDMI, DisplayPort",
+          "технологии": "FidelityFX, FreeSync, Ray Tracing"
+        }
+      },
+      {
+        "id": "gpu8",
+        "name": "NVIDIA GeForce RTX 4070",
+        "category": "Видео карти",
+        "image": "images/gpu8.jpg",
+        "oldPrice": 2499,
+        "newPrice": 2499,
+        "isPromo": false,
+        "description": {
+          "overview": "RTX 4070 осигурява отлично съотношение между мощ и консумация. Подходяща за QHD и 4K игри с включени Ray Tracing ефекти.",
+          "производител": "NVIDIA",
+          "памет": "12GB GDDR6X",
+          "интерфейс": "PCIe 4.0",
+          "изходи": "HDMI, DisplayPort",
+          "технологии": "DLSS 3, Ray Tracing, Reflex"
+        }
+      },
+      {
+        "id": "gpu9",
+        "name": "NVIDIA Quadro P2200",
+        "category": "Видео карти",
+        "image": "images/gpu9.jpg",
+        "oldPrice": 1699,
+        "newPrice": 1699,
+        "isPromo": false,
+        "description": {
+          "overview": "Quadro P2200 е професионална видео карта, насочена към CAD/CAM, 3D рендеринг и инженерни приложения.",
+          "производител": "NVIDIA",
+          "памет": "5GB GDDR5X",
+          "интерфейс": "PCIe 3.0",
+          "изходи": "DisplayPort x4",
+          "технологии": "NVIDIA Quadro, ECC memory"
+        }
+      },
+      {
+        "id": "gpu10",
+        "name": "Intel Arc A770",
+        "category": "Видео карти",
+        "image": "images/gpu10.jpg",
+        "oldPrice": 979,
+        "newPrice": 979,
+        "isPromo": false,
+        "description": {
+          "overview": "Arc A770 е флагманската геймърска карта от Intel с поддръжка на Ray Tracing и XeSS. Подходяща за геймъри, които търсят алтернатива.",
+          "производител": "Intel",
+          "памет": "16GB GDDR6",
+          "интерфейс": "PCIe 4.0",
+          "изходи": "HDMI, DisplayPort",
+          "технологии": "XeSS, Ray Tracing, DirectX 12 Ultimate"
+        }
+      }
+    ]
+          
