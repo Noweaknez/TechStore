@@ -1,62 +1,75 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const CART_KEY = "techstore_cart";
-  
-    const JSON_URL = location.hostname.endsWith("github.io")
-      ? "/TechStore/products.json"
-      : "./products.json";
-  
-    const getCart = () => JSON.parse(localStorage.getItem(CART_KEY) || "[]");
-    const saveCart = (cart) => localStorage.setItem(CART_KEY, JSON.stringify(cart));
-  
-    function unitPriceOf(prod) {
-      const hasPromo = !!prod.isPromo;
-      const oldP = Number(prod.oldPrice ?? 0);
-      const newP = Number(prod.newPrice ?? 0);
-      if (hasPromo && newP && newP !== oldP) return newP;
-      return oldP || newP || 0;
+(function () {
+  const { getCart, saveCart, updateBadge } = window.__cartApi || {};
+
+  function money(x){ return `${x.toFixed(2)} лв.`; }
+
+  function render() {
+    const wrap = document.getElementById("cartWrap");
+    const cart = getCart();
+
+    if (!cart.length) {
+      wrap.innerHTML = `<p>Кошницата е празна.</p>`;
+      updateBadge();
+      return;
     }
-  
-    function updateCartCountBadge() {
-      const badge = document.getElementById("cartCount");
-      if (!badge) return;
-      const totalQty = getCart().reduce((s, it) => s + (it.qty || 0), 0);
-      badge.textContent = totalQty || "";
-    }
-  
-    function addToCartById(productId) {
-      fetch(JSON_URL, { cache: "no-store" })
-        .then(r => r.json())
-        .then(list => {
-          const prod = (Array.isArray(list) ? list : []).find(p => String(p.id) === String(productId));
-          if (!prod) return alert("Продуктът не е намерен.");
-  
-          const cart = getCart();
-          const found = cart.find(i => i.id === prod.id);
-          if (found) {
-            found.qty += 1;
-          } else {
-            cart.push({
-              id: prod.id,
-              name: prod.name,
-              image: prod.image,
-              price: unitPriceOf(prod), // число
-              qty: 1
-            });
-          }
-          saveCart(cart);
-          updateCartCountBadge();
-          alert("Добавено в кошницата: " + prod.name);
-        })
-        .catch(() => alert("Проблем при добавяне в кошницата."));
-    }
-  
-    document.body.addEventListener("click", (e) => {
-      const btn = e.target.closest(".add-to-cart");
-      if (!btn) return;
-      e.preventDefault();
-      const id = btn.getAttribute("data-id");
-      if (!id) return;
-      addToCartById(id);
+
+    const rows = cart.map((it, i) => `
+      <tr>
+        <td><img src="${it.image || ''}" alt="" width="60"></td>
+        <td>${it.name}</td>
+        <td>${money(it.price)}</td>
+        <td>
+          <button class="qty-dec" data-i="${i}">–</button>
+          <input type="number" min="1" value="${it.qty || 1}" data-i="${i}" class="qty-input">
+          <button class="qty-inc" data-i="${i}">+</button>
+        </td>
+        <td>${money((it.qty || 1) * it.price)}</td>
+        <td><button class="remove" data-i="${i}">✖</button></td>
+      </tr>
+    `).join("");
+
+    const total = cart.reduce((s, it) => s + (it.qty || 1) * it.price, 0);
+
+    wrap.innerHTML = `
+      <table class="cart">
+        <thead>
+          <tr>
+            <th></th><th>Продукт</th><th>Цена</th>
+            <th>Кол-во</th><th>Сума</th><th></th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4" style="text-align:right"><strong>Общо:</strong></td>
+            <td><strong>${money(total)}</strong></td>
+            <td>
+              <button id="clearCart">Изчисти</button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    `;
+
+
+    wrap.querySelectorAll(".qty-inc").forEach(b => b.onclick = () => {
+      const i = +b.dataset.i; cart[i].qty++; saveCart(cart); render();
     });
-    updateCartCountBadge();
-  });
+    wrap.querySelectorAll(".qty-dec").forEach(b => b.onclick = () => {
+      const i = +b.dataset.i; cart[i].qty = Math.max(1, (cart[i].qty||1)-1); saveCart(cart); render();
+    });
+    wrap.querySelectorAll(".qty-input").forEach(inp => inp.onchange = () => {
+      const i = +inp.dataset.i; cart[i].qty = Math.max(1, +inp.value || 1); saveCart(cart); render();
+    });
+    wrap.querySelectorAll(".remove").forEach(b => b.onclick = () => {
+      const i = +b.dataset.i; cart.splice(i,1); saveCart(cart); render();
+    });
+    const clr = document.getElementById("clearCart");
+    if (clr) clr.onclick = () => { saveCart([]); render(); };
+
+    updateBadge();
+  }
+
+  document.addEventListener("DOMContentLoaded", render);
+})();
+
