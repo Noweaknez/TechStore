@@ -1,6 +1,6 @@
-// cart-common.js
+
 (function () {
-  const LS_KEY = "cart"; // localStorage key
+  const LS_KEY = "cart"; 
 
   function getCart() {
     try { return JSON.parse(localStorage.getItem(LS_KEY)) || []; }
@@ -29,13 +29,12 @@
     updateBadge();
   }
 
-  // Закачи всички бутони .btn-add (и .add-to-cart за всеки случай)
   function wireButtons() {
     document.querySelectorAll(".btn-add, .add-to-cart").forEach(btn => {
       btn.addEventListener("click", (e) => {
         e.preventDefault();
         const d = btn.dataset;
-        const price = Number(d.price);   // ВАЖНО: само число в data-price
+        const price = Number(d.price);   
         if (!d.id || !d.name || !price) {
           alert("Липсва id/name/price на бутона.");
           return;
@@ -46,7 +45,6 @@
           price: price,
           image: d.image || ""
         });
-        // малък фийдбек
         btn.textContent = "Добавено ✓";
         setTimeout(() => (btn.textContent = "Добави"), 900);
       });
@@ -58,6 +56,5 @@
     updateBadge();
   });
 
-  // достъпно за други скриптове (напр. cart.js)
   window.__cartApi = { getCart, saveCart, updateBadge };
 })();
