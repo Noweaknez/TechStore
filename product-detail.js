@@ -1,4 +1,4 @@
-// product-detail.js (замени целия файл с това)
+
 document.addEventListener("DOMContentLoaded", function () {
   const productEl = document.getElementById("productDetails");
   const crumbsEl  = document.getElementById("breadcrumbs");
@@ -21,8 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     productEl.innerHTML = "<p>Липсва параметър <code>id</code>.</p>";
     return;
   }
-
-  // Абсолютен път за GitHub Pages, относителен локално
   const JSON_URL = location.hostname.endsWith("github.io")
     ? "/TechStore/products.json"
     : "./products.json";
@@ -97,3 +95,4 @@ document.addEventListener("DOMContentLoaded", function () {
       productEl.innerHTML = "<p>Възникна проблем при зареждане на продукта.</p>";
     });
 });
+
