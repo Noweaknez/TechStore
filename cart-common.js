@@ -1,60 +1,74 @@
+<!-- Увери се, че това е съдържанието на cart-common.js -->
+<script>
+// cart-common.js (v2) – работи само с data-id и чете детайли от products.json
+document.addEventListener("DOMContentLoaded", () => {
+  const CART_KEY = "techstore_cart";
 
-(function () {
-  const LS_KEY = "cart"; 
+  // правилен път за GitHub Pages/локално
+  const JSON_URL = location.hostname.endsWith("github.io")
+    ? "/TechStore/products.json"
+    : "./products.json";
 
-  function getCart() {
-    try { return JSON.parse(localStorage.getItem(LS_KEY)) || []; }
-    catch { return []; }
-  }
-  function saveCart(cart) {
-    localStorage.setItem(LS_KEY, JSON.stringify(cart));
-  }
-  function cartCount() {
-    return getCart().reduce((s, it) => s + (it.qty || 1), 0);
-  }
-  function updateBadge() {
-    const el = document.getElementById("cartCount");
-    if (el) el.textContent = cartCount() ? `(${cartCount()})` : "";
-  }
-  function addToCart(item) {
-    const cart = getCart();
-    const idx = cart.findIndex(x => String(x.id) === String(item.id));
-    if (idx >= 0) {
-      cart[idx].qty = (cart[idx].qty || 1) + (item.qty || 1);
-    } else {
-      item.qty = item.qty || 1;
-      cart.push(item);
-    }
-    saveCart(cart);
-    updateBadge();
+  const getCart = () => JSON.parse(localStorage.getItem(CART_KEY) || "[]");
+  const saveCart = (cart) => localStorage.setItem(CART_KEY, JSON.stringify(cart));
+
+  function unitPriceOf(prod) {
+    const oldP = Number(prod.oldPrice ?? 0);
+    const newP = Number(prod.newPrice ?? 0);
+    if (prod.isPromo && newP && newP !== oldP) return newP;
+    return oldP || newP || 0;
   }
 
-  function wireButtons() {
-    document.querySelectorAll(".btn-add, .add-to-cart").forEach(btn => {
-      btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        const d = btn.dataset;
-        const price = Number(d.price);   
-        if (!d.id || !d.name || !price) {
-          alert("Липсва id/name/price на бутона.");
+  function updateCartCountBadge() {
+    const badge = document.getElementById("cartCount");
+    if (!badge) return;
+    const totalQty = getCart().reduce((s, it) => s + (Number(it.qty) || 0), 0);
+    badge.textContent = totalQty || "";
+  }
+
+  function addToCartById(productId) {
+    fetch(JSON_URL, { cache: "no-store" })
+      .then(r => r.json())
+      .then(list => {
+        const prod = (Array.isArray(list) ? list : [])
+          .find(p => String(p.id) === String(productId));
+        if (!prod) {
+          alert("Продуктът не е намерен.");
           return;
         }
-        addToCart({
-          id: d.id,
-          name: d.name,
-          price: price,
-          image: d.image || ""
-        });
-        btn.textContent = "Добавено ✓";
-        setTimeout(() => (btn.textContent = "Добави"), 900);
-      });
-    });
+
+        const cart = getCart();
+        const found = cart.find(i => String(i.id) === String(prod.id));
+        if (found) {
+          found.qty = (Number(found.qty) || 0) + 1;
+        } else {
+          cart.push({
+            id: prod.id,
+            name: prod.name,
+            image: prod.image,
+            price: unitPriceOf(prod),
+            qty: 1
+          });
+        }
+        saveCart(cart);
+        updateCartCountBadge();
+        alert("Добавено в кошницата: " + prod.name);
+      })
+      .catch(() => alert("Проблем при добавяне в кошницата."));
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    wireButtons();
-    updateBadge();
+  document.body.addEventListener("click", (e) => {
+    const btn = e.target.closest(".add-to-cart");
+    if (!btn) return;
+    e.preventDefault();
+    const id = btn.getAttribute("data-id");
+    if (!id) {
+      alert("Липсва data-id на бутона.");
+      return;
+    }
+    addToCartById(id);
   });
 
-  window.__cartApi = { getCart, saveCart, updateBadge };
-})();
+  updateCartCountBadge();
+});
+</script>
