@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Кошница | TechStoreX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">TechStoreX</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="Products.html">Продукти</a></li>
+        <li><a href="cart.html">🛒 Кошница <span id="cartCount"></span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="cart-wrap">
+    <h1>Моята кошница</h1>
+
+    <table class="cart-table" id="cartTable">
+      <thead>
+        <tr>
+          <th>Снимка</th>
+          <th>Продукт</th>
+          <th>Ед. цена</th>
+          <th>Количество</th>
+          <th>Общо</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="cart-total" id="cartTotal"></div>
+    <div class="cart-actions">
+      <button id="clearCart" class="remove-btn">Изчисти кошницата</button>
+      <a href="Products.html" class="btn-secondary">← Продължи пазаруването</a>
+      <a href="#" class="btn-primary" id="checkoutBtn">Поръчай</a>
+    </div>
+  </main>
+
+  <script src="cart.js?v=1"></script>
+
+  <script>
+    const CART_KEY = "techstore_cart";
+
+    function getCart(){ return JSON.parse(localStorage.getItem(CART_KEY) || "[]"); }
+    function saveCart(c){ localStorage.setItem(CART_KEY, JSON.stringify(c)); renderCart(); }
+
+    function formatPrice(n){ return Number(n||0).toFixed(2) + " лв."; }
+
+    function renderCart(){
+      const tbody = document.querySelector("#cartTable tbody");
+      const totalEl = document.getElementById("cartTotal");
+      const cart = getCart();
+
+      if (!cart.length){
+        tbody.innerHTML = '<tr><td colspan="6" style="padding:20px;text-align:center;">Кошницата е празна.</td></tr>';
+        totalEl.textContent = "";
+        const badge = document.getElementById("cartCount");
+        if (badge) badge.textContent = "";
+        return;
+      }
+
+      let total = 0;
+      tbody.innerHTML = cart.map(item => {
+        const line = item.price * item.qty;
+        total += line;
+        return `
+          <tr data-id="${item.id}">
+            <td><img src="${item.image}" alt="${item.name}"></td>
+            <td style="text-align:left">
+              <strong>${item.name}</strong><br>
+              <a href="product.html?id=${item.id}">Виж подробности</a>
+            </td>
+            <td>${formatPrice(item.price)}</td>
+            <td>
+              <button class="qty-btn dec">-</button>
+              <span style="display:inline-block;min-width:28px">${item.qty}</span>
+              <button class="qty-btn inc">+</button>
+            </td>
+            <td>${formatPrice(line)}</td>
+            <td><button class="remove-btn remove">Премахни</button></td>
+          </tr>
+        `;
+      }).join("");
+
+      totalEl.textContent = "Общо: " + formatPrice(total);
+
+      const badge = document.getElementById("cartCount");
+      if (badge){
+        const totalQty = cart.reduce((s,i)=>s+i.qty,0);
+        badge.textContent = totalQty || "";
+      }
+    }
+
+    document.querySelector("#cartTable").addEventListener("click", (e) => {
+      const row = e.target.closest("tr[data-id]");
+      if (!row) return;
+      const id = row.getAttribute("data-id");
+      let cart = getCart();
+      const item = cart.find(i => i.id === id);
+      if (!item) return;
+
+      if (e.target.classList.contains("inc")){
+        item.qty += 1;
+        saveCart(cart);
+      } else if (e.target.classList.contains("dec")){
+        item.qty -= 1;
+        if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
+        saveCart(cart);
+      } else if (e.target.classList.contains("remove")){
+        cart = cart.filter(i => i.id !== id);
+        saveCart(cart);
+      }
+    });
+
+    document.getElementById("clearCart").addEventListener("click", () => {
+      if (confirm("Сигурни ли сте, че искате да изчистите кошницата?")){
+        localStorage.removeItem(CART_KEY);
+        renderCart();
+      }
+    });
+
+    document.getElementById("checkoutBtn").addEventListener("click", (e) => {
+      e.preventDefault();
+      alert();
+    });
+
+
+    renderCart();
+  </script>
+</body>
+</html>
