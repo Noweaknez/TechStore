@@ -1,10 +1,7 @@
-<!-- Увери се, че това е съдържанието на cart-common.js -->
 <script>
-// cart-common.js (v2) – работи само с data-id и чете детайли от products.json
 document.addEventListener("DOMContentLoaded", () => {
   const CART_KEY = "techstore_cart";
 
-  // правилен път за GitHub Pages/локално
   const JSON_URL = location.hostname.endsWith("github.io")
     ? "/TechStore/products.json"
     : "./products.json";
