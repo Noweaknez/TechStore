@@ -324,7 +324,6 @@ body {
     margin-top: 20px;
   }
   
-  /* Малки екрани: телефони */
   @media (max-width: 768px) {
     header,
     nav ul {
@@ -374,4 +373,86 @@ body {
       font-size: 20px;
       padding: 10px;
     }
+
   }
+
+.opisanie {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.06);
+}
+
+.opisanie .grid {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 30px;
+}
+
+.opisanie img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.price {
+  margin: 12px 0;
+  font-size: 22px;
+}
+
+.old-price {
+  color: #888;
+  text-decoration: line-through;
+  margin-right: 8px;
+}
+
+.new-price {
+  color: #d9480f;
+  font-weight: 700;
+}
+
+.badge {
+  display: inline-block;
+  background: #0ea5e9;
+  color: #fff;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.specs {
+  margin-top: 18px;
+}
+
+.specs li {
+  padding: 7px 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.breadcrumbs {
+  max-width: 1100px;
+  margin: 10px auto 0;
+  font-size: .95rem;
+  color: #555;
+}
+
+.breadcrumbs a {
+  color: #0b6bcb;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .product-hero .grid {
+    grid-template-columns: 1fr;
+  }
+}
