@@ -82,9 +82,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="price">${priceHtml}</div>
             ${overview ? `<p>${overview}</p>` : ""}
             ${specItems ? `<ul class="specs">${specItems}</ul>` : ""}
-            <div style="margin-top:18px; display:flex; gap:10px;">
-              <a class="btn" href="#">Купи</a>
-              <a class="btn" href="${catPage}" style="background:#475569">← Назад към категорията</a>
+
+            <div style="margin-top:18px; display:flex; gap:10px;">  
+            <button class="btn add-to-cart" data-id="${product.id}">Добави в кошницата</button>
+            <a class="btn" href="${catPage}" style="background:#475569">← Назад към категорията</a>
             </div>
           </div>
         </div>
@@ -95,4 +96,5 @@ document.addEventListener("DOMContentLoaded", function () {
       productEl.innerHTML = "<p>Възникна проблем при зареждане на продукта.</p>";
     });
 });
+
 
