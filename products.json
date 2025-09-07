@@ -179,10 +179,8 @@
         "честота": "3.8GHz → 4.5GHz",
         "TDP": "280W"
       }
-    }
-
-    [
-      {
+    },
+    {
         "id": "laptop1",
         "name": "HP ProBook 450",
         "category": "Лаптопи",
@@ -238,8 +236,7 @@
           "графика": "AMD Radeon Vega",
           "батерия": "до 7 часа"
         }
-      }
-
+      },
       {
         "id": "laptop1",
         "name": "HP ProBook 450",
@@ -429,10 +426,8 @@
           "графика": "Intel UHD Graphics",
           "батерия": "до 6 часа"
         }
-      }
-
-      [
-        {
+      },
+      {
           "id": "monitor1",
           "name": "LG UltraGear 27\"",
           "category": "Монитори",
@@ -621,8 +616,7 @@
             "време за реакция": "1ms MPRT",
             "технологии": "AMD FreeSync, Flicker-Free"
           }
-        }
-      
+        },     
         {
           "id": "mb1",
           "name": "ASUS PRIME B550M-A",
@@ -712,9 +706,8 @@
             "RAM": "до 128GB DDR4",
             "интерфейси": "PCIe 4.0, Wi-Fi, RGB, HDMI"
           }
-        }
-        
-          {
+        },
+        {
             "id": "mb6",
             "name": "MSI Z690-A DDR4",
             "category": "Дънни платки",
@@ -803,10 +796,8 @@
               "RAM": "до 64GB DDR5",
               "интерфейси": "HDMI, USB 3.2, PCIe 4.0, M.2"
             }
-          }
-
-          
-            {
+          },
+          {
               "id": "pc1",
               "name": "Геймърски компютър Xtreme",
               "category": "Геймърски компютри",
@@ -900,10 +891,8 @@
                 "захранване": "650W Bronze",
                 "кутия": "Thermaltake V200"
               }
-            }
-
-            
-              {
+            },       
+            {
                 "id": "pc6",
                 "name": "Lenovo Legion T5",
                 "category": "Геймърски компютри",
@@ -997,10 +986,8 @@
                   "захранване": "600W",
                   "кутия": "Dell G5"
                 }
-              }
-
-              
-                {
+              },  
+              {
                   "id": "peripheral1",
                   "name": "Геймърска мишка Logitech G502 HERO",
                   "category": "Периферия",
@@ -1084,8 +1071,7 @@
                     "батерия": "До 3 години",
                     "допълнителни функции": "Hyper-Fast Scroll"
                   }
-                }
-
+                },
                 {
                   "id": "peripheral6",
                   "name": "Мултимедиен високоговорител Creative Pebble",
@@ -1170,8 +1156,7 @@
                     "съвместимост": "Windows, Mac",
                     "стойка": "Настолна метална"
                   }
-                }
-
+                },
                 {
                   "id": "gpu1",
                   "name": "NVIDIA GeForce RTX 3060 Ti",
@@ -1256,8 +1241,7 @@
                     "изходи": "HDMI, DisplayPort",
                     "технологии": "FidelityFX, FreeSync"
                   }
-                }
-
+                },
                 {
                   "id": "gpu6",
                   "name": "NVIDIA RTX 3080",
@@ -1343,5 +1327,6 @@
                     "технологии": "XeSS, Ray Tracing, DirectX 12 Ultimate"
                   }
                 }
+
 
 ]
