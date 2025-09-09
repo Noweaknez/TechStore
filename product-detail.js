@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ${specItems ? `<ul class="specs">${specItems}</ul>` : ""}
 
             <div style="margin-top:18px; display:flex; gap:10px;">  
-            <button class="btn add-to-cart" data-id="${product.id}">Добави в кошницата</button>
+            <button class="btn add-to-cart" data-id="${product.id}">Купи</button>
             <a class="btn" href="${catPage}" style="background:#475569">← Назад към категорията</a>
             </div>
           </div>
@@ -96,5 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
       productEl.innerHTML = "<p>Възникна проблем при зареждане на продукта.</p>";
     });
 });
+
 
 
