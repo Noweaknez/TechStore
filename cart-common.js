@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("cart-common.js loaded"); // ще видиш това в Console, за да сме сигурни, че се зарежда
+  console.log("cart-common.js loaded"); 
 
   const CART_KEY = "techstore_cart";
 
@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     badge.textContent = totalQty || "";
   }
 
-  // Глобална функция, достъпна от HTML: onclick="addToCart('cpu1')"
   window.addToCart = function(productId) {
     if (!productId) {
       alert("Липсва id на продукта.");
@@ -62,8 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Проблем при добавяне в кошницата.");
       });
   };
-
-  // по желание: запазваме и делегиран клик по .add-to-cart
   document.body.addEventListener("click", (e) => {
     const btn = e.target.closest(".add-to-cart");
     if (!btn) return;
