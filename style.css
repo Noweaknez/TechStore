@@ -1,4 +1,3 @@
-/* Основни стилове */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -42,7 +41,6 @@ body {
     text-decoration: none;
   }
   
-  /* Банер */
   .banner {
     position: relative;
     text-align: center;
@@ -93,7 +91,6 @@ body {
     margin: 20px auto 0;
   }
   
-  /* Продукти на начална страница */
   .featured-products {
     padding: 50px 10%;
     background-color: #fff;
@@ -147,7 +144,6 @@ body {
     margin: 5px 0;
   }
   
-  /* Категории (бутон линкове) */
   .product {
     display: block;
     background-color: #f9f9f9;
@@ -169,7 +165,6 @@ body {
     background-color: #eef7ff;
   }
   
-  /* Таблица с продукти */
   .product-page {
     padding: 40px 10%;
   }
@@ -196,7 +191,6 @@ body {
     height: auto;
   }
   
-  /* Категории - навигация */
   .category-nav {
     background-color: #f0f0f0;
     padding: 15px 10px;
@@ -233,7 +227,6 @@ body {
     background-color: #005fa3;
   }
   
-  /* Информационна секция */
   .info {
     padding: 50px 10%;
     background-color: #eaeaea;
@@ -253,7 +246,6 @@ body {
     font-weight: bold;
   }
   
-  /* Футър */
   footer {
     background-color: #222;
     color: #fff;
@@ -266,7 +258,6 @@ body {
     margin: 0 10px;
   }
   
-  /* Контактна форма */
   .contact-page {
     padding: 40px 10%;
     max-width: 600px;
@@ -470,5 +461,6 @@ body {
     @media (max-width:700px){
       .cart-table th:nth-child(1), .cart-table td:nth-child(1){display:none}
     }
+
 
 
